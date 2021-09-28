@@ -25,6 +25,10 @@ foreach (require __DIR__ . '/classes.php' as $class => $file) {
 }
 
 use AutomationSequences\AutomationSequence;
+use AutomationSequences\Setup\Activator;
+
+register_activation_hook(__FILE__, [Activator::class, 'activation']);
+register_deactivation_hook(__FILE__, [Activator::class, 'deactivation']);
 
 $automation = new AutomationSequence();
 $automation->run();
