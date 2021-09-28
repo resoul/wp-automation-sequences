@@ -1,0 +1,6 @@
+=== AutomationSequences ===
+
+= 0.0.1 =
+*Release Date - 28 September 2021*
+
+* Init project
